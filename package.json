@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon backend/index.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm start\" \"npm run client\" "
+    "dev": "concurrently \"npm start\" \"npm run client\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [
     "MERN",
