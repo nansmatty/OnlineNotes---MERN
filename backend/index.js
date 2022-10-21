@@ -14,12 +14,7 @@ const app = express();
 dotenv.config();
 connectDB();
 app.use(express.json());
-app.use(
-	cors({
-		origin:
-			"https://curious-cactus-5b7831.netlify.app",
-	})
-);
+app.use(cors());
 
 app.use("/api/users", userRoutes);
 app.use("/api/notes", noteRoutes);
