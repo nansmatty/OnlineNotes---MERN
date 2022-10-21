@@ -1,33 +1,33 @@
 {
-  "name": "onlinenotes",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon backend/index.js",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm start\" \"npm run client\" ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
-  },
-  "keywords": [
-    "MERN",
-    "React",
-    "Redux",
-    "MongoDB",
-    "NodeJS",
-    "ExpressJS"
-  ],
-  "author": "Narayan Maity",
-  "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "colors": "^1.4.0",
-    "concurrently": "^6.2.1",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-async-handler": "^1.1.4",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.4",
-    "nodemon": "^2.0.12"
-  }
+	"name": "onlinenotes",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node backend/index.js",
+		"client": "npm start --prefix frontend",
+		"dev": "concurrently \"npm start\" \"npm run client\" ",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+	},
+	"keywords": [
+		"MERN",
+		"React",
+		"Redux",
+		"MongoDB",
+		"NodeJS",
+		"ExpressJS"
+	],
+	"author": "Narayan Maity",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"colors": "^1.4.0",
+		"concurrently": "^6.2.1",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-async-handler": "^1.1.4",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.0.4",
+		"nodemon": "^2.0.12"
+	}
 }
